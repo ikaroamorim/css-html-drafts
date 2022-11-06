@@ -1,0 +1,67 @@
+:root {
+   --g1: rgb(98, 0 ,234);
+   --g2: rgb(236, 64, 122);
+}
+
+body{
+   background: linear-gradient(
+      to right,
+      var(--g1),
+      var(--g2),
+      var(--g1)
+   );
+
+   animation: background-pan 10s linear infinite;
+   background-size: 200%;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0px;
+
+   position: relative;
+}
+
+a{
+   position: absolute;
+   padding: 5px;
+   top: 20px;
+   right: 20px;
+   border-radius:5px;
+   color:white;
+   background: linear-gradient(
+      to right,
+      var(--g1),
+      var(--g2)
+   );
+   text-decoration: none;
+}
+
+#tiles{
+   height: 100vh;
+   width: 100vw;
+
+   background-color: transparent;
+   display: grid;
+   grid-template-columns: repeat(var(--columns), 1fr);
+   grid-template-rows: repeat(var(--rows), 1fr)
+}
+
+.tile{
+   position: relative;
+}
+
+.tile:before{
+   background-color: rgb(20,20,20);
+   content: "";
+   position: absolute;
+   inset: 0.5px;
+}
+
+@keyframes background-pan{
+   from{
+      background-position: 0% center;
+   }
+
+   to{
+      background-position: -200% center;
+   }
+}

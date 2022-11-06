@@ -3,6 +3,23 @@ body{
    height: 100vh;
    overflow: hidden;
    margin: 0px;
+   position: relative;
+}
+
+a{
+   position: absolute;
+   padding: 5px;
+   top: 20px;
+   right: 20px;
+   border-radius:5px;
+   color:white;
+   background: rgb(98, 0 ,234);
+   text-decoration: none;
+   transition: background linear 0.4s;
+}
+
+a:hover{
+   background: rgb(236, 64, 122);
 }
 
 #tiles{
