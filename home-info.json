@@ -1,0 +1,28 @@
+{
+   "cards":[
+      {
+         "title":"Staggered Grid",
+         "description":"Example of Staggered Grid Effect using Anime.js ",
+         "image":"./assets/staggered-grid.gif",
+         "category":"CSS Follow Along",
+         "buttons":[
+            {
+               "link":"./pages/staggered-grid/index.html",
+               "text":"Check this out!"
+            }
+         ]
+      },
+      {
+         "title":"Image Mask",
+         "description":"A quick example how to use the Image Mask effect, in this case using the exact same images from the original video",
+         "image":"./assets/mask-image.gif",
+         "category":"CSS Follow Along",
+         "buttons":[
+            {
+               "link":"./pages/mask-image/index.html",
+               "text":"Check this out!"
+            }
+         ]
+      }
+   ]
+}
