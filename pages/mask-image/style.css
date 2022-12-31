@@ -1,0 +1,44 @@
+h1{
+   text-align: center;
+}
+
+.image-container {
+   position        : relative;
+   width: 65%;
+   margin: 0 auto;
+}
+
+.bw-image {
+   width: 100%;
+}
+
+.color-image {
+   inset           : 0;
+   position        : absolute;
+   background-size : cover;
+   background-image: url('./images/color-image.jpg');
+   /*opacity: 0.1;*/
+
+   -webkit-mask-image: url('./images/image-mask.png');
+   -webkit-mask-size: cover;
+   -webkit-mask-position: 0% 0%;
+
+   transition: -webkit-mask-position;
+}
+
+.mask-animation{
+   animation: addColor 2000ms steps(24) alternate-reverse infinite;
+}
+
+@keyframes addColor{
+   0%{
+      -webkit-mask-position: 0% 0%;
+      mask-position: 0% 0%;
+   }
+
+   100%{
+      -webkit-mask-position: 100% 0%;
+      mask-position: 100% 0%;
+   }
+
+}
