@@ -23,6 +23,18 @@
                "text":"Check this out!"
             }
          ]
+      },
+      {
+         "title":"CSS Reset",
+         "description":"A code snipet to use in every document to now on",
+         "image":"./assets/mask-image.gif",
+         "category":"Utilities",
+         "buttons":[
+            {
+               "link":"./pages/css-reset/style.css",
+               "text":"Check this out!"
+            }
+         ]
       }
    ]
 }
